@@ -1,3 +1,4 @@
+
 <div class="content">
     <div class="module">
         <div class="module-head">
@@ -37,4 +38,4 @@
         </div>
     </div>
     <input type="hidden" name="" id="categories_list" value="{{ json_encode($categories_list) }}">
-</div>
+
