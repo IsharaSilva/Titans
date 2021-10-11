@@ -1,3 +1,9 @@
+@extends('layout.index')
+
+@section('custom_top_script')
+@stop
+
+@section('content')
 <div class="content">
     <div class="module">
         <div class="module-head">
@@ -22,3 +28,10 @@
         </div>
     </div>    
 </div>
+@stop
+
+@section('custom_bottom_script')
+
+    <script type="text/javascript" src="{{ asset('static/custom/js/script.addbookcategory.js') }}"></script>
+
+@stop
