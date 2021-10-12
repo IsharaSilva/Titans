@@ -61,5 +61,35 @@ Route::resource('/books', 'BooksController');
         'as' => 'bookBycategory',
         'uses' => 'BooksController@BookByCategory'
     ));
+    Route::get('/registered-students', array(
+        'as' => 'registered-students',
+        'uses' => 'StudentController@renderStudents'
+    ));
+
+    // Render students approval panel
+    Route::get('/students-for-approval', array(
+        'as' => 'students-for-approval',
+        'uses' => 'StudentController@renderApprovalStudents'
+	));
+	
+	  // Render students approval panel
+	  Route::get('/settings', array(
+        'as' => 'settings',
+        'uses' => 'StudentController@Setting'
+	));
+	
+	  // Render students approval panel
+	  Route::post('/setting', array(
+        'as' => 'settings.store',
+        'uses' => 'StudentController@StoreSetting'
+    ));
+
+    // Main students Controlller resource
+	Route::resource('/student', 'StudentController');
+	
+	Route::post('/studentByattribute', array(
+        'as' => 'studentByattribute',
+        'uses' => 'StudentController@StudentByAttribute'
+    ));
 
 	 
