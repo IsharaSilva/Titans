@@ -45,7 +45,7 @@
             font-style: bold;
         }
         .navbar-inner{
-            background: #9400D3 !important;
+            background:lightblue !important;
             color:#fff;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-transform: uppercase;
